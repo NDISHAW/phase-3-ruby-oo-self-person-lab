@@ -69,7 +69,7 @@ class Person
             [self,friend].each {|person| person.happiness +=1}
             "blah blah sun blah rain"
         else
-            "blah blah blah blah blah"
+            "blah blah sun blah rain"
         end
     end
 end

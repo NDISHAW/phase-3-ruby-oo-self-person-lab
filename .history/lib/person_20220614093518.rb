@@ -49,27 +49,14 @@ class Person
     end
 
     def work_out
-        self.happiness += 2
+        self.happiness += 4
         self.hygiene -= 3
         "♪ another one bites the dust ♫"
     end
 
-    def call_friend(friend)
+    def call_friend
         self.happiness +=3
-        friend.happiness +=3
-        "Hi #{friend.name}! It's #{self.name}. How are you?"
+        friend.happiness +
     end
 
-    def start_conversation(friend, topic)
-        case topic
-        when "politics"
-            [self, friend].each {|person| person.happiness -=2}
-            "blah blah partisan blah lobbyist"
-        when "weather"
-            [self,friend].each {|person| person.happiness +=1}
-            "blah blah sun blah rain"
-        else
-            "blah blah blah blah blah"
-        end
-    end
 end
